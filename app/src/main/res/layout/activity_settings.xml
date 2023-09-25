@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    app:cardCornerRadius="16dp"
+    android:elevation="20dp"
+    android:background="?attr/background_color">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/back"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingTop="5sp">
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/baloo"
+        android:paddingStart="15sp"
+        android:paddingTop="4sp"
+        android:text="Food Med"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout10" />
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+
+        android:id="@+id/gifImageView"
+        android:layout_width="367dp"
+        android:layout_height="241dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/delivry"
+        app:layout_constraintBottom_toTopOf="@+id/coment1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout10" />
+
+    <TextView
+        android:id="@+id/siteWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/aclonica"
+        android:paddingBottom="5dp"
+        android:text="www.foodmed.com"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+
+    <TextView
+        android:id="@+id/coment1"
+        android:layout_width="196dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/cat_background1"
+        android:drawableLeft="@drawable/user_3"
+        android:drawablePadding="10sp"
+        android:elevation="20dp"
+        android:onClick="profile"
+        android:paddingLeft="20dp"
+        android:text="  My Profile"
+        android:textColor="?attr/text_color"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+        tools:ignore="MissingConstraints"
+        tools:paddingStart="10sp" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="196dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cat_background4"
+        android:drawableLeft="@drawable/info"
+        android:drawablePadding="10sp"
+        android:elevation="20dp"
+        android:onClick="info"
+        android:paddingLeft="20dp"
+        android:text="  Info"
+        android:textColor="?attr/text_color"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        tools:ignore="MissingConstraints"
+        tools:paddingStart="10sp" />
+
+    <TextView
+        android:id="@+id/my_cart"
+        android:layout_width="196dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cat_background2"
+        android:drawableLeft="@drawable/cart"
+        android:drawablePadding="10sp"
+        android:elevation="20dp"
+        android:onClick="cart"
+        android:paddingLeft="20dp"
+        android:text="  My Cart"
+        android:textColor="?attr/text_color"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coment1"
+        tools:ignore="MissingConstraints"
+        tools:paddingStart="10sp" />
+
+    <TextView
+        android:id="@+id/Sing_out"
+        android:layout_width="196dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cat_background5"
+        android:drawableLeft="@drawable/logout"
+        android:drawablePadding="10sp"
+        android:elevation="20dp"
+        android:paddingLeft="20dp"
+        android:text="  Sing Out"
+        android:textColor="?attr/text_color"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        tools:ignore="MissingConstraints"
+        tools:paddingStart="10sp" />
+
+    <TextView
+        android:id="@+id/sing_out"
+        android:layout_width="196dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cat_background1"
+        android:drawableLeft="@drawable/exit"
+        android:drawablePadding="10sp"
+        android:elevation="20dp"
+        android:onClick="exit"
+        android:paddingLeft="20dp"
+        android:text="  Exit"
+        android:textColor="?attr/text_color"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sing_out"
+        tools:ignore="MissingConstraints"
+        tools:paddingStart="10sp" />
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#f6f6f6"
+            app:fabCradleMargin="8dp"
+            app:fabCradleRoundedCornerRadius="50dp"
+            app:fabCradleVerticalOffset="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/homeBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/home" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profileBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/user1" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/homBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@android:drawable/btn_star" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/supportBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/message" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Support"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/settingsBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/settings" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Settings"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cartBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ff5e00"
+            android:elevation="3dp"
+            android:src="@drawable/shoppingcart"
+            app:backgroundTint="#ff5e00"
+            app:layout_anchor="@+id/app_bar"
+            app:maxImageSize="30dp"
+            app:tint="#ffffff">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="237dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cat_background3"
+        android:drawableLeft="@drawable/night_mode"
+        android:elevation="20dp"
+        android:paddingStart="10dp"
+        android:text="  Night Mode"
+        android:textColor="?attr/text_color"
+        android:textSize="22sp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_cart" />
+
+    <pl.droidsonroids.gif.GifImageView
+
+        android:id="@+id/gifImageView3"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="300dp"
+        android:src="@drawable/wow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324" />
+
+    <pl.droidsonroids.gif.GifImageView
+
+        android:id="@+id/gifImageView4"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="230dp"
+        android:src="@drawable/wow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gifImageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gmailBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintStart_toEndOf="@+id/instagramBtn"
+        app:layout_constraintTop_toBottomOf="@+id/sing_out"
+        app:layout_constraintVertical_bias="0.488"
+        app:srcCompat="@drawable/google" />
+
+    <ImageView
+        android:id="@+id/facebookBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sing_out"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/instagramBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintStart_toEndOf="@+id/facebookBtn"
+        app:layout_constraintTop_toBottomOf="@+id/sing_out"
+        app:srcCompat="@drawable/instagram" />
+
+    <ImageView
+        android:id="@+id/twitterBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gmailBtn"
+        app:layout_constraintTop_toBottomOf="@+id/sing_out"
+        app:srcCompat="@drawable/twitter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "84125400702",
+    "firebase_url": "https://foodmed-abbad-default-rtdb.firebaseio.com",
+    "project_id": "foodmed-abbad",
+    "storage_bucket": "foodmed-abbad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84125400702:android:f6fe601438cac12f54a22f",
+        "android_client_info": {
+          "package_name": "com.example.food2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84125400702-ae5elns68t9h1nifuctq0tn5kfa9ciu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTtct9hH-a71MoC7o9b_1MvbHsqF-oSK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84125400702-ae5elns68t9h1nifuctq0tn5kfa9ciu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
